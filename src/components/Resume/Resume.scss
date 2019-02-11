@@ -1,0 +1,29 @@
+.cv_page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: sans-serif, source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+}
+
+.print_cv_btn {
+  background-color: #2196f3;
+  position: fixed;
+  left: 2%;
+  bottom: 1%;
+  border: none;
+  font-size: 18px;
+}
+
+.print_cv_btn:hover {
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+.cv_container {
+  width: 800px;
+  height: 1150px;
+  border: 1px solid gray;
+  margin: 3% 10% 7% 0;
+}

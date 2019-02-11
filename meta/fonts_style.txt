@@ -1,0 +1,21 @@
+<link href="https://fonts.googleapis.com/css?family=Cantarell:400,700|Roboto:300,400,700|Ubuntu:300,400,500,700&amp;subset=latin-ext" rel="stylesheet"> 
+
+
+
+    font-family: 'Cantarell', sans-serif;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+
+
+Background: rgb(15, 20, 31);
+blue elements: #2196f3 | rgb(33, 150, 243)
+
+circle marks: 40 x 40px, radius 50%
+
+buttons: border radius: 4px
+
+INSPIRATION: https://resume.io/examples
+

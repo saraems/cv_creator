@@ -1,0 +1,122 @@
+.template_minimal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.template_minimal header {
+  height: 25%;
+  width: 100%;
+  background-color: #1f1f14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.template_minimal_user_name {
+  font-size: 30px;
+  letter-spacing: 7px;
+  color: white;
+  border: 3px solid white;
+  padding: 20px 150px 20px 150px;
+  text-transform: uppercase;
+}
+
+.template_minimal_user_position {
+  font-size: 20px;
+  color: white;
+  padding: 30px 0 10px 0;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.decoration_line {
+  border: 0.5px solid white;
+  width: 25%;
+}
+
+
+main.main_page {
+  height: 75%;
+  width: 100%;
+  display: flex;
+}
+
+main .template_minimal_left_panel_container {
+  width: 37%;
+  height: 100%;
+  letter-spacing: 1px;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 80px 40px 50px 40px;
+  background-color: rgb(225,247,213);
+}
+
+main .template_minimal_left_panel_container .template_minimal_education, .template_minimal_expertise {
+  margin-bottom: 1.5em;
+}
+
+
+main .template_minimal_left_panel_container ul {
+  list-style: none;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+main .template_minimal_left_panel_container ul li {
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+
+.template_minimal_right_panel_container {
+  width: 73%;
+  height: 100%;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  padding: 80px 50px 50px 50px;
+}
+
+.template_minimal_right_panel_container .template_minimal_experience {
+  margin-top: 3em;
+}
+
+.template_minimal_right_panel_container .template_minimal_experience_position_container {
+  margin: 2em 0 2.5em 0;
+}
+
+h1 {
+  font-size: 1.1em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 0 0 0.8em 0;
+}
+
+h3 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin: 0 0 0.2em 0;
+}
+
+h4 {
+  font-size: 0.89em;
+  font-family: 'Merienda', cursive;
+  margin: 0 0 0.2em 0;
+}
+
+p {
+  font-size: 0.85em;
+}
+
+p.left_panel {
+  font-size: 0.8em;
+  margin: 0;
+}
