@@ -15,7 +15,7 @@ class App extends Component {
             <BrowserRouter>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={Home}/>
+                        <Route exact path="/cv_creator/" component={Home}/>
                         <Route path="/templates" component={Templates}/>
                         <Route path="/data" component={DataSource}/>
                         <Route path="/form" component={ResumeForm} />
