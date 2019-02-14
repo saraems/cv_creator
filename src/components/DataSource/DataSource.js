@@ -70,7 +70,7 @@ class DataSource extends Component {
 
 
     responseLinkedin = response => {
-        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fresume&state=987654321&scope=r_basicprofile'
+        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fresume%2F&state=987654321&scope=r_basicprofile'
     };
 
     demoData = () => {
