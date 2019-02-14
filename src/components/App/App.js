@@ -6,13 +6,13 @@ import DataSource from './../DataSource/DataSource';
 import ResumeForm from './../ResumeForm/ResumeForm';
 import Resume from './../Resume/Resume';
 import NotFound from './../NotFound/NotFound';
-import { HashRouter, Route, Switch, Router } from 'react-router-dom';
+import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
 
 
 class App extends Component {
     render() {
         return (
-            <Router>
+            <BrowserRouter>
                 <div>
                     <Switch>
                         <Route exact path="/" component={Home}/>
@@ -23,7 +23,7 @@ class App extends Component {
                         <Route path="*" component={NotFound}/>
                     </Switch>
                 </div>
-            </Router>
+            </BrowserRouter>
         );
     }
 }
