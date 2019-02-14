@@ -36,7 +36,7 @@ class DataSource extends Component {
             body: queryString.stringify({
                 'grant_type':'authorization_code',
                 'code': code,
-                'redirect_uri': 'https://saraems.github.io/cv_creator/#/resume/',
+                'redirect_uri': 'https://saraems.github.io/cv_creator/resume/',
                 'client_id': '77k3xcm0gm759e',
                 'client_secret': 'rF7EW3ZgFJU48iGZ'
             })
@@ -45,7 +45,7 @@ class DataSource extends Component {
         var acces =  {
             method: 'GET',
             headers: {
-                'Access-Control-Allow-Origin': 'https://saraems.github.io/cv_creator/#/resume/',
+                'Access-Control-Allow-Origin': 'https://saraems.github.io/cv_creator/resume/',
                 'Access-Control-Allow-Credentials': 'true',
                 'Authorization': 'Bearer' + this.state.token,
             }};
@@ -70,7 +70,7 @@ class DataSource extends Component {
 
 
     responseLinkedin = response => {
-        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fcv_creator%2F&state=987654321&scope=r_basicprofile'
+        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fresume&state=987654321&scope=r_basicprofile'
     };
 
     demoData = () => {
