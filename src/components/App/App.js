@@ -6,24 +6,22 @@ import DataSource from './../DataSource/DataSource';
 import ResumeForm from './../ResumeForm/ResumeForm';
 import Resume from './../Resume/Resume';
 import NotFound from './../NotFound/NotFound';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
+import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 
 class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div>
                     <Switch>
-                        <Route exact path="/cv_creator/" component={Home}/>
+                        <Route exact path="/cv_creator" component={Home}/>
                         <Route path="/templates" component={Templates}/>
                         <Route path="/data" component={DataSource}/>
                         <Route path="/form" component={ResumeForm} />
                         <Route path="/resume" component={Resume} />
                         <Route path="*" component={NotFound}/>
                     </Switch>
-                </div>
             </BrowserRouter>
         );
     }

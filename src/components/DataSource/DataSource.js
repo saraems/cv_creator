@@ -17,6 +17,14 @@ class DataSource extends Component {
 
     componentDidMount() {
 
+
+        this.intervalId = setTimeout(() => {
+            let content = document.body.querySelector('.main_page_content_container');
+            content.classList.add('fade-appear-active')
+
+        }, 20);
+
+
         let code = window.location.href;
         code = code.replace('&state=987654321#/', '');
         code = code.replace('https://saraems.github.io/cv_creator/#/resume/?code=', '');
@@ -99,29 +107,28 @@ class DataSource extends Component {
     render() {
         return (
             <div className="main_page_container">
+                <div className="main_page_content_container fade-enter">
+                    <header>
+                        <h1> Insert information</h1>
+                        <p>
+                            prepare information about your career path by yourself or use your LinkedIn account
+                        </p>
+                    </header>
 
-                <header>
-                    <h1> Insert information</h1>
-                    <p>
-                        prepare information about your career path by yourself or use your LinkedIn account
-                    </p>
-                </header>
+                    <section className="btns_container">
 
-                <section className="btns_container">
+                        <Link to='/form'><button className="selection_btn btn_use_form" id="use_your_own_data">Prepare your data</button></Link>
 
-                    <Link to='/form'><button className="selection_btn btn_use_form" id="use_your_own_data">Prepare your data</button></Link>
+                        <button className="selection_btn btn_use_LiIn" id="use_linkedIn_data" onClick={this.responseLinkedin}> <i className="fab fa-linkedin linkedin"> </i> Use your LinkedIn's data</button>
 
-                    <button className="selection_btn btn_use_LiIn" id="use_linkedIn_data" onClick={this.responseLinkedin}> <i className="fab fa-linkedin linkedin"> </i> Use your LinkedIn's data</button>
+                    </section>
 
-                </section>
+                    <section className="btn_container">
 
-                <section className="btn_container">
+                        <Link to='/resume'><button onClick={ this.demoData } className="selection_btn btn_use_LiIn" id="use_your_own_data">Use demo data</button></Link>
 
-                    <Link to='/resume'><button onClick={ this.demoData } className="selection_btn btn_use_LiIn" id="use_your_own_data">Use demo data</button></Link>
-
-                </section>
-
-
+                    </section>
+                </div>
             </div>
         )
     }
