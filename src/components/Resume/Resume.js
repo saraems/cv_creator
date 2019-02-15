@@ -5,8 +5,6 @@ import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import ResumeClassic from '../ResumeClassic/ResumeClassic'
 import ResumeSides from "../ResumeSides/ResumeSides";
-// import { Link } from 'react-router-dom';
-
 
 
 class Resume extends Component {

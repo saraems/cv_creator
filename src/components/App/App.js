@@ -6,22 +6,22 @@ import DataSource from './../DataSource/DataSource';
 import ResumeForm from './../ResumeForm/ResumeForm';
 import Resume from './../Resume/Resume';
 import NotFound from './../NotFound/NotFound';
-import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 
 class App extends Component {
     render() {
         return (
-            <BrowserRouter>
+            <HashRouter>
                     <Switch>
-                        <Route exact path="/cv_creator" component={Home}/>
-                        <Route path="/cv_creator/templates" component={Templates}/>
-                        <Route path="/cv_creator/data" component={DataSource}/>
-                        <Route path="/cv_creator/form" component={ResumeForm} />
-                        <Route path="/cv_creator/resume" component={Resume} />
-                        <Route path="/cv_creator/*" component={NotFound}/>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/templates" component={Templates}/>
+                        <Route path="/data" component={DataSource}/>
+                        <Route path="/form" component={ResumeForm} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="*" component={NotFound}/>
                     </Switch>
-            </BrowserRouter>
+            </HashRouter>
         );
     }
 }
