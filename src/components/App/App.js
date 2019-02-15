@@ -15,25 +15,14 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <Route render={ ({location}) => (
-                        <TransitionGroup>
-                            <CSSTransition
-                                key={location.key}
-                                timeout={450}
-                                className='fade'
-                            >
-                                <Switch location={location}>
-                                    <Route exact path="/cv_creator/" component={Home}/>
-                                    <Route path="/templates" component={Templates}/>
-                                    <Route path="/data" component={DataSource}/>
-                                    <Route path="/form" component={ResumeForm} />
-                                    <Route path="/resume" component={Resume} />
-                                    <Route path="*" component={NotFound}/>
-                                </Switch>
-                            </CSSTransition>
-                        </TransitionGroup>
-                        )
-                    }/>
+                    <Switch>
+                        <Route exact path="/cv_creator/" component={Home}/>
+                        <Route path="/templates" component={Templates}/>
+                        <Route path="/data" component={DataSource}/>
+                        <Route path="/form" component={ResumeForm} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="*" component={NotFound}/>
+                    </Switch>
                 </div>
             </BrowserRouter>
         );
