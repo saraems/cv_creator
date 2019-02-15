@@ -7,7 +7,6 @@ import ResumeForm from './../ResumeForm/ResumeForm';
 import Resume from './../Resume/Resume';
 import NotFound from './../NotFound/NotFound';
 import { HashRouter, Route, Switch, BrowserRouter } from 'react-router-dom';
-// import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 
 class App extends Component {
@@ -16,11 +15,11 @@ class App extends Component {
             <BrowserRouter>
                     <Switch>
                         <Route exact path="/cv_creator" component={Home}/>
-                        <Route path="/templates" component={Templates}/>
-                        <Route path="/data" component={DataSource}/>
-                        <Route path="/form" component={ResumeForm} />
-                        <Route path="/resume" component={Resume} />
-                        <Route path="*" component={NotFound}/>
+                        <Route path="/cv_creator/templates" component={Templates}/>
+                        <Route path="/cv_creator/data" component={DataSource}/>
+                        <Route path="/cv_creator/form" component={ResumeForm} />
+                        <Route path="/cv_creator/resume" component={Resume} />
+                        <Route path="/cv_creator/*" component={NotFound}/>
                     </Switch>
             </BrowserRouter>
         );

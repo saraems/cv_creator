@@ -40,6 +40,16 @@ class ResumeForm extends Component {
         }
     }
 
+    // FADE IN
+
+    componentDidMount() {
+        this.intervalId = setTimeout(() => {
+            let content = document.body.querySelector('.main_page_content_container');
+            content.classList.add('fade-appear-active')
+
+        }, 20);
+    }
+
 
     // GENERAL
 
@@ -283,19 +293,23 @@ class ResumeForm extends Component {
 
         return (
             <div className="form_page_container">
-                <div className="form_header"><p>Prepare information for your resume</p></div>
-                <main className="form_container">
-                    <div className='form'>
-                       <General name={ this.name } surname = { this.surname } currentPosition = { this.currentPosition } summary={ this.summary } phoneNumber={ this.phoneNumber } email={ this.email }/>
-                        <Positions companyName={ this.companyName } startMonthYear={ this.startMonthYear } title={ this.title } positionLocation={ this.positionLocation } endMonthYear={ this.endMonthYear } positionDescription={ this.positionDescription } createPositionObj={ this.createPositionObj }/>
-                        <Languages proficiency={ this.proficiency } language={ this.language } createLanguageObj={ this.createLanguageObj }/>
-                        <Skills skills={ this.skills } />
-                        <Educations schoolName={ this.schoolName } fieldOfStudy={ this.fieldOfStudy } startDate={ this.startDate }  endDate={ this.endDate } degree={ this.degree } createEducationObj={ this.createEducationObj }/>
-                    </div>
-                    <Link to='/resume'>
-                        <button onClick={ this.submit } type="submit" className='create_resume_btn'> Create your Resume </button>
-                    </Link>
-                </main>
+                <div className="main_page_content_container fade-enter">
+
+                    <div className="form_header"><p>Prepare information for your resume</p></div>
+                    <main className="form_container">
+                        <div className='form'>
+                           <General name={ this.name } surname = { this.surname } currentPosition = { this.currentPosition } summary={ this.summary } phoneNumber={ this.phoneNumber } email={ this.email }/>
+                            <Positions companyName={ this.companyName } startMonthYear={ this.startMonthYear } title={ this.title } positionLocation={ this.positionLocation } endMonthYear={ this.endMonthYear } positionDescription={ this.positionDescription } createPositionObj={ this.createPositionObj }/>
+                            <Languages proficiency={ this.proficiency } language={ this.language } createLanguageObj={ this.createLanguageObj }/>
+                            <Skills skills={ this.skills } />
+                            <Educations schoolName={ this.schoolName } fieldOfStudy={ this.fieldOfStudy } startDate={ this.startDate }  endDate={ this.endDate } degree={ this.degree } createEducationObj={ this.createEducationObj }/>
+                        </div>
+                        <Link to='/resume'>
+                            <button onClick={ this.submit } type="submit" className='create_resume_btn'> Create your Resume </button>
+                        </Link>
+                    </main>
+
+                </div>
             </div>
         );
     }

@@ -12,6 +12,22 @@ class Home extends Component {
         }, 20);
     }
 
+    // FadeOut = async (e) => {
+    //
+    //     e.preventDefault();
+    //
+    //     this.intervalId = await setTimeout((e) => {
+    //
+    //         let content = document.body.querySelector('.main_page_content_container');
+    //         content.classList.add('fade-exit-active');
+    //
+    //     }, 100);
+    //
+    //     setTimeout(() => {
+    //         window.location.assign('http://localhost:3000/templates')
+    //     }, 1005)
+    // };
+
     render() {
 
         return (
@@ -25,7 +41,7 @@ class Home extends Component {
                         </p>
                     </header>
                     <section className="btns_container">
-                        <Link to="/templates"><button className="selection_btn choose_template"> Choose a template</button></Link>
+                        <Link to="/cv_creator/templates" onClick={ this.FadeOut }><button className="selection_btn choose_template"> Choose a template</button></Link>
                     </section>
                 </div>
             </div>

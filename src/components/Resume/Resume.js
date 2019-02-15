@@ -47,7 +47,7 @@ class Resume extends Component {
 
         html2canvas(input)
             .then((canvas) => {
-                document.body.appendChild(canvas);
+                // document.body.appendChild(canvas);
                 const imgData = canvas.toDataURL('image/png');
 
                 const pdf = new jsPDF();
@@ -83,7 +83,7 @@ class Resume extends Component {
                     <section className="cv_container" id="capture" >
                         <ResumeSides personData = {this.state.personData}/>
                     </section>
-                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Print</button>
+                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Download</button>
                 </div>
             )
         }

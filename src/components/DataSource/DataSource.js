@@ -43,7 +43,7 @@ class DataSource extends Component {
             body: queryString.stringify({
                 'grant_type':'authorization_code',
                 'code': code,
-                'redirect_uri': 'https://saraems.github.io/cv_creator/resume/',
+                'redirect_uri': 'https://saraems.github.io/cv_creator/resume',
                 'client_id': '77k3xcm0gm759e',
                 'client_secret': 'rF7EW3ZgFJU48iGZ'
             })
@@ -52,7 +52,7 @@ class DataSource extends Component {
         var acces =  {
             method: 'GET',
             headers: {
-                'Access-Control-Allow-Origin': 'https://saraems.github.io/cv_creator/resume/',
+                'Access-Control-Allow-Origin': 'https://saraems.github.io/cv_creator/resume',
                 'Access-Control-Allow-Credentials': 'true',
                 'Authorization': 'Bearer' + this.state.token,
             }};
@@ -77,7 +77,7 @@ class DataSource extends Component {
 
 
     responseLinkedin = response => {
-        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fresume%2F&state=987654321&scope=r_basicprofile'
+        window.location.href = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=77k3xcm0gm759e&redirect_uri=https%3A%2F%2Fsaraems.github.io%2Fcv_creator%2Fresume&state=987654321&scope=r_basicprofile'
     };
 
     demoData = () => {
@@ -117,7 +117,7 @@ class DataSource extends Component {
 
                     <section className="btns_container">
 
-                        <Link to='/form'><button className="selection_btn btn_use_form" id="use_your_own_data">Prepare your data</button></Link>
+                        <Link to='/cv_creator/form'><button className="selection_btn btn_use_form" id="use_your_own_data">Prepare your data</button></Link>
 
                         <button className="selection_btn btn_use_LiIn" id="use_linkedIn_data" onClick={this.responseLinkedin}> <i className="fab fa-linkedin linkedin"> </i> Use your LinkedIn's data</button>
 
@@ -125,7 +125,7 @@ class DataSource extends Component {
 
                     <section className="btn_container">
 
-                        <Link to='/resume'><button onClick={ this.demoData } className="selection_btn btn_use_LiIn" id="use_your_own_data">Use demo data</button></Link>
+                        <Link to='/cv_creator/resume'><button onClick={ this.demoData } className="selection_btn btn_use_LiIn" id="use_your_own_data">Use demo data</button></Link>
 
                     </section>
                 </div>
