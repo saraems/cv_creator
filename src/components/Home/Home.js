@@ -25,7 +25,7 @@ class Home extends Component {
 
         setTimeout(() => {
             window.location.assign(`https://saraems.github.io/cv_creator/#/templates`)
-        }, 30)
+        }, 200)
     };
 
     render() {
