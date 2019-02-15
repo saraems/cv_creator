@@ -21,11 +21,11 @@ class Home extends Component {
             let content = document.body.querySelector('.main_page_content_container');
             content.classList.add('fade-exit-active');
 
-        }, 100);
+        }, 20);
 
         setTimeout(() => {
             window.location.assign(`https://saraems.github.io/cv_creator/#/templates`)
-        }, 1005)
+        }, 30)
     };
 
     render() {
