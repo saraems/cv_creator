@@ -30,9 +30,9 @@ class Templates extends Component {
                         </h3>
                     </header>
                     <section className="templates_container">
-                        <Link to="/data"><div onClick={ () => this.chooseTemplate('sides') } className="cv_template_container two_sides_template_icon"> </div></Link>
-                        <Link to="/data"><div onClick={ () => this.chooseTemplate('min') } className="cv_template_container minimalistic_template_icon"> </div></Link>
-                        <Link to="/data"><div onClick={ () => this.chooseTemplate('class')} className="cv_template_container classic_template_icon"> </div></Link>
+                        <Link to="/cv_creator/data"><div onClick={ () => this.chooseTemplate('sides') } className="cv_template_container two_sides_template_icon"> </div></Link>
+                        <Link to="/cv_creator/data"><div onClick={ () => this.chooseTemplate('min') } className="cv_template_container minimalistic_template_icon"> </div></Link>
+                        <Link to="/cv_creator/data"><div onClick={ () => this.chooseTemplate('class')} className="cv_template_container classic_template_icon"> </div></Link>
                     </section>
                 </div>
             </div>
