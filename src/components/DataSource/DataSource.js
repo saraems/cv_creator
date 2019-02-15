@@ -7,7 +7,7 @@ import queryString from 'query-string';
 
 class DataSource extends Component {
 
-    //Pedestrian way
+
     constructor(props) {
         super(props);
         this.state = {
@@ -17,7 +17,6 @@ class DataSource extends Component {
 
     componentDidMount() {
 
-        // CO TO JEST
         let code = window.location.href;
         code = code.replace('&state=987654321#/', '');
         code = code.replace('https://saraems.github.io/cv_creator/#/resume/?code=', '');
