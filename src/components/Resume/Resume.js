@@ -63,7 +63,7 @@ class Resume extends Component {
                     <section className="cv_container" id="capture" >
                         <ResumeClassic personData = {this.state.personData}/>
                     </section>
-                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Print</button>
+                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Download</button>
                 </div>
             )
         } else if (localStorage.template === "min") {
@@ -72,7 +72,7 @@ class Resume extends Component {
                     <section className="cv_container" id="capture" >
                         <ResumeMinimalistic personData = {this.state.personData}/>
                      </section>
-                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Print</button>
+                    <button id={"singlePage"} className="selection_btn print_cv_btn" onClick={ this.print }>Download</button>
                 </div>
             )
         } else if (localStorage.template === "sides") {
